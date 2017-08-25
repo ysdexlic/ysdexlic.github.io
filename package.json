@@ -4,7 +4,12 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "webpack-dev-server --inline --progress"
+    "start": "webpack-dev-server --inline --progress",
+    "build": "NODE_ENV=production webpack --progress -p --colors",
+    "postbuild": "npm run copyassets && npm run stylus",
+    "copyassets": "mkdir -p build/style && mkdir -p build/style/images && cp -r style/images/* build/style/images",
+    "stylus": "stylus style/style.styl -o build/style/style.css",
+    "server": "node server"
   },
   "author": "",
   "license": "ISC",
@@ -25,6 +30,7 @@
     "babel-preset-react": "^6.24.1",
     "babel-preset-stage-2": "^6.24.1",
     "css-loader": "^0.28.5",
+    "express": "^4.15.4",
     "file-loader": "^0.11.2",
     "html-loader": "^0.5.1",
     "html-webpack-plugin": "^2.30.1",
