@@ -1,0 +1,138 @@
+html, body {
+  -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
+  margin: 0;
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  position: fixed;
+}
+
+::selection {
+  color: #555;
+  background: rgba(255,255,255,1);
+}
+
+h1, h2, h3 {
+  margin: 0 0 10px;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif
+}
+
+h2 {
+  font-weight: 300;
+}
+
+h3 {
+  font-size: 40px;
+}
+
+.wrapper {
+  background: #9bd8ff;
+  color: white;
+  width: 100%;
+  height: 100%;
+  display: table;
+}
+
+.container {
+  display: table-cell;
+  vertical-align: middle;
+  text-align: center;
+}
+
+.image {
+  background: #ffcebe;
+  width: 130px;
+  height: 130px;
+  border-radius: 50%;
+  margin-bottom: 20px;
+  border: 2px solid white;
+  animation: hueRotate 10s infinite;
+}
+
+ul {
+  padding: 0;
+  margin: 0;
+}
+
+li {
+  display: inline-block;
+  height: 40px
+}
+
+svg {
+  width: 40px;
+  height: 40px;
+  fill: white;
+}
+
+
+.icon-linkedin {
+  transition: fill 0.2s ease-in;
+}
+.icon-linkedin:hover {
+  fill: #007bb6;
+}
+.icon-github {
+  transition: fill 0.2s ease-in;
+}
+.icon-github:hover {
+  fill: #000000;
+}
+.icon-stackoverflow {
+  transition: fill 0.2s ease-in;
+}
+.icon-stackoverflow:hover {
+  fill: #fe7a15;
+}
+.icon-facebook {
+  transition: fill 0.2s ease-in;
+}
+.icon-facebook:hover {
+  fill: #3b5998;
+}
+.icon-twitter {
+  transition: fill 0.2s ease-in;
+}
+.icon-twitter:hover {
+  fill: #00aced
+}
+.icon-email {
+  transition: fill 0.2s ease-in;
+}
+.icon-email:hover {
+  fill: red
+}
+
+
+@media screen and (min-width: 500px) {
+  h1 {
+    font-size: 50px;
+  }
+  h2 {
+    font-size: 30px;
+  }
+}
+
+@-webkit-keyframes hueRotate {
+  0% {
+    filter: hue-rotate(0deg);
+    -webkit-filter: hue-rotate(0deg);
+  }
+  100% {
+    filter: hue-rotate(360deg);
+    -webkit-filter: hue-rotate(360deg);
+  }
+}
+
+@keyframes hueRotate {
+  0% {
+    filter: hue-rotate(0deg);
+    -webkit-filter: hue-rotate(0deg);
+  }
+  100% {
+    filter: hue-rotate(360deg);
+    -webkit-filter: hue-rotate(360deg);
+  }
+}
