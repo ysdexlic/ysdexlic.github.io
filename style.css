@@ -5,10 +5,7 @@ html, body {
   margin: 0;
   width: 100%;
   height: 100%;
-}
-
-body {
-  position: fixed;
+  background: #8cc2eb;
 }
 
 ::selection {
