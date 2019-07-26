@@ -34,7 +34,7 @@ h3 {
 
 .wrapper {
   background: #8cc2eb;
-  animation:hueRotate 20s infinite;
+  animation:hueRotate 30s infinite;
   color: white;
   width: 100%;
   height: 100%;
@@ -49,7 +49,7 @@ h3 {
 
 .image {
   background: url("./me.png") no-repeat 50% 10% / cover;
-  animation:hueRotateReverse 20s infinite;
+  animation:hueRotateReverse 30s infinite;
   width: 450px;
   height: 270px;
   border-radius: 5px;
