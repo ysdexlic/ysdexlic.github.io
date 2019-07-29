@@ -127,3 +127,10 @@ svg {
     -webkit-filter: hue-rotate(-360deg);
   }
 }
+
+
+@media only screen and (max-width: 600px) {
+	.image {
+        width: 250px;
+    }
+}
