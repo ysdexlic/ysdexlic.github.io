@@ -82,6 +82,9 @@ svg {
   h2 {
     font-size: 30px;
   }
+  .image {
+    width: 250px;
+  }
 }
 
 @-webkit-keyframes hueRotate {
@@ -126,10 +129,4 @@ svg {
     filter: hue-rotate(-360deg);
     -webkit-filter: hue-rotate(-360deg);
   }
-}
-
-@media only screen and (max-width: 600px) {
-	.image {
-        width: 250px;
-    }
 }
